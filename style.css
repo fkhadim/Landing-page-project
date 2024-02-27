@@ -48,11 +48,11 @@ li {
 
 .hero {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding:20px;
   padding-top:30px;
-  margin-top:50px;
-  margin-bottom: 80px;
+  padding-bottom: 60px;
+  
 }
 
 .hero-text {
@@ -60,7 +60,7 @@ li {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 50vw;
+  max-width: 50vw;
   
 }
 
@@ -75,25 +75,17 @@ li {
 .hero-text p {
   font-size: 18px;
   color: #E5E7EB;
-  width: 400px;
+  max-width: 400px;
   margin: 0;
 }
 
 .header-button {
   background-color: #3882F6;
   align-self: flex-start;
-  margin-left: 260px;
   margin-top: 20px;
   padding: 5px 20px;
   border-radius: 10px;
   color: white;
-}
-
-.hero-image {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  width: 50vw;
 }
 
 img {
@@ -104,7 +96,8 @@ img {
 .body-container {
   display: flex;
   width: 100vw;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .body {
@@ -119,11 +112,13 @@ img {
   font-size: 36px;
   font-weight: bolder;
   color: #1f2937;
+  text-align: center;
 }
 
 .cards {
   display: flex;
   height: 300px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -135,6 +130,7 @@ img {
   height: 230px;
   color: #1f2937;
   font-size: 18px;
+  align-self: center;
 }
 
 .card p {
@@ -156,6 +152,7 @@ img {
   display: flex;
   width: 50vw;
   flex-direction: column;
+
 }
 
 .quote-text {
